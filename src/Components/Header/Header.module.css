@@ -1,7 +1,7 @@
 .header {
     margin: 0 auto;
     padding: 0;
-    background-color: #1c1c21;
+    background-color: #282c34;
     width: 100%;
 }
 
@@ -21,6 +21,7 @@
     padding: 0;
     padding: 0;
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     list-style: none;
     list-style-type: none;
@@ -32,9 +33,8 @@
     align-items: center;
     text-decoration: none;
     height: 56px;
-    background-color: #1c1c21;
+    background-color: #282c34;
     border: none;
-    font-family: Jet Brains Mono;
     color: #8585AD
 }
 
@@ -55,6 +55,7 @@
 .navigationText {
     font-size: 16px;
     line-height: 24px;
+    color: whitesmoke;
 }
 
 .profile {
@@ -63,4 +64,6 @@
 
 .logo {
     justify-self: center;
+    max-width: 100px;
+    color: aliceblue;
 }

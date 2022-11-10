@@ -1,69 +1,57 @@
-import { Link, NavLink } from "react-router-dom";
 import Styles from "../Header/Header.module.css";
-// import {
-//     Logo,
-//     ProfileIcon,
-//     ListIcon,
-//     BurgerIcon,
-// } from "@ya.praktikum/react-developer-burger-ui-components";
+import Logo from "../../img/ryabov_new_white.png";
 
 const Header = () => {
     return (
         <header className={Styles.header}>
             <nav>
-                <section className={`${Styles.contentWidth} pb-4 pt-4`}>
+                <section className={`${Styles.contentWidth}`}>
                     <ul className={`${Styles.buttonList}`}>
-                        <li>
-                            <Link
-                                className={`${Styles.navigationButton} pl-5 mr-2 pr-5`}
-                                to="/"
-                            >
-                                <BurgerIcon />
-                                <p
-                                    className={`${Styles.navigationText} ml-2 text text_type_main-default`}
-                                >
-                                    Конструктор
-                                </p>
-                            </Link>
+                        <li
+                            className={`${Styles.navigationButton} ${Styles.profile}`}
+                        >
+                            <p className={`${Styles.navigationText}`}>О нас</p>
                         </li>
 
-                        <li>
-                            <Link
-                                to="/"
-                                className={`${Styles.navigationButton} pl-5 pr-5`}
-                            >
-                                <ListIcon
-                                    className={`${Styles.navigationIcon}`}
-                                />
-                                <p
-                                    className={`${Styles.navigationText} ml-2 text text_type_main-default`}
-                                >
-                                    Лента заказов
-                                </p>
-                            </Link>
+                        <li
+                            className={`${Styles.navigationButton} ${Styles.profile}`}
+                        >
+                            <p className={`${Styles.navigationText}`}>
+                                Контакты
+                            </p>
                         </li>
                     </ul>
 
                     <div className={Styles.logo}>
-                        <Logo />
+                        <img src={Logo} className={Styles.logo} />
                     </div>
 
-                    <li className={`${Styles.navigationButton} pl-5 pr-5 ${Styles.profile}`}>
-                        <NavLink
-                            to="/loging"
-                            className={`${Styles.navigationButton} pl-5 pr-5 ${Styles.profile} text text_type_main-default`}
-                            activeClassName={`${Styles.navigationButton} pl-5 pr-5 ${Styles.profile} text text_type_main-default ${Styles.navigationButtonActive}`}
+                    <ul className={`${Styles.buttonList}`}>
+                        <li
+                            className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <ProfileIcon
-                                className={`${Styles.navigationIcon} mr-2`}
-                            />
-                            <p
-                                className={`${Styles.navigationText} ml-2 text text_type_main-default`}
-                            >
-                                Личный кабинет
+                            <p className={`${Styles.navigationText}`}>Услуги</p>
+                        </li>
+
+                        <li
+                            className={`${Styles.navigationButton} ${Styles.profile}`}
+                        >
+                            <p className={`${Styles.navigationText}`}>
+                                Примеры работ
                             </p>
-                        </NavLink>
-                    </li>
+                        </li>
+
+                        <li
+                            className={`${Styles.navigationButton}`}
+                        >
+                            <a
+                                href="tel:+79789012010"
+                                className={`${Styles.navigationText}`}
+                            >
+                                +7(978) 901-2010
+                            </a>
+                        </li>
+                    </ul>
                 </section>
             </nav>
         </header>
