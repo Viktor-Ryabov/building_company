@@ -1,0 +1,13 @@
+.logo {
+    margin: 0;
+    padding: 0;
+    justify-self: start;
+    max-width: 200px;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+    max-width: 100px;
+    }
+}
