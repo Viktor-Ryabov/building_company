@@ -1,6 +1,6 @@
 import './App.css';
-import Header from './Components/Header/Header';
-import TopMenu from './Components/TopMenu/TopMenu';
+import Header from '../Header/Header.js';
+import TopMenu from '../TopMenu/TopMenu.js';
 
 function App() {
   return (

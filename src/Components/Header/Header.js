@@ -1,12 +1,15 @@
 import Styles from "../Header/Header.module.css";
-import Logo from "../../img/ryabov_new_white.png";
+import Logo from "../Logo/Logo.js";
+import BurgerMenulogo from "../BurgerMenulogo/BurgerMenulogo";
 
 const Header = () => {
     return (
         <header className={Styles.header}>
-            <nav>
-                <section className={`${Styles.contentWidth}`}>
-                    <ul className={`${Styles.buttonList}`}>
+            <nav className={`${Styles.contentWidth}`}>
+                <Logo />
+                <ul className={`${Styles.headerMenu}`}>
+                    <BurgerMenulogo />
+                    <div className={`${Styles.buttonList}`}>
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
@@ -20,13 +23,7 @@ const Header = () => {
                                 Контакты
                             </p>
                         </li>
-                    </ul>
 
-                    <div className={Styles.logo}>
-                        <img src={Logo} className={Styles.logo} />
-                    </div>
-
-                    <ul className={`${Styles.buttonList}`}>
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
@@ -40,19 +37,14 @@ const Header = () => {
                                 Примеры работ
                             </p>
                         </li>
+                    </div>
 
-                        <li
-                            className={`${Styles.navigationButton}`}
-                        >
-                            <a
-                                href="tel:+79789012010"
-                                className={`${Styles.navigationText}`}
-                            >
-                                +7(978) 901-2010
-                            </a>
-                        </li>
-                    </ul>
-                </section>
+                    <p className={`${Styles.navigationText} ${Styles.phone}`}>
+                        +7 (978) 901-2010
+                    </p>
+
+                    <p className={`${Styles.navigationText} ${Styles.mail}`}>iprva@ya.ru</p>
+                </ul>
             </nav>
         </header>
     );
