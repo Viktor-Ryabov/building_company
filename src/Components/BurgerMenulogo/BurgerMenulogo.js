@@ -3,9 +3,9 @@ import Logo_burger_menu from "../../img/burger_menu.png"
 
 const BurgerMenulogo = () => {
     return (
-        <div>
+        <button className={Styles.button}>
             <img src={Logo_burger_menu} className={Styles.logo} />
-        </div>
+        </button>
     )
 }
 
