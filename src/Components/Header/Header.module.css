@@ -24,14 +24,32 @@
 }
 
 .headerMenu {
-    margin: 0 50px 0 50px;
+    margin: 0 0 0 50px;
     padding: 0;
     padding: 0;
     display: flex;
     display: grid;
     grid-template-columns: 0px auto;
+    grid-template-rows: 40px 40px 10px;
     list-style: none;
     list-style-type: none;
+    grid-template-areas: 
+    "logo menu" 
+    ". phone"
+    ". mail"
+}
+
+.phone{
+    grid-area: phone;
+    align-self: center;
+    justify-self: flex-end;
+    font-weight: 600;
+}
+.mail{
+    grid-area: mail;
+    align-self: center;
+    justify-self: flex-end;
+    font-weight: 600;
 }
 
 .buttonList {
@@ -42,6 +60,8 @@
     flex-direction: row;
     list-style: none;
     list-style-type: none;
+    border-bottom: solid 2px rgba(255, 255, 255, .5);
+    /* max-height: 100px; */
 }
 
 @media screen and (max-width: 750px) {
@@ -68,7 +88,7 @@
     flex-direction: row;
     align-items: center;
     text-decoration: none;
-    height: 56px;
+    height: 29px;
     /* background-color: #282c34; */
     border: none;
     color: #8585ad;
@@ -89,6 +109,8 @@
 }
 
 .navigationText {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
     color: whitesmoke;

@@ -37,16 +37,13 @@ const Header = () => {
                                 Примеры работ
                             </p>
                         </li>
-
-                        {/* <li className={`${Styles.navigationButton}`}>
-                            <a
-                                href="tel:+79789012010"
-                                className={`${Styles.navigationText}`}
-                            >
-                                +7(978) 901-2010
-                            </a>
-                        </li> */}
                     </div>
+
+                    <p className={`${Styles.navigationText} ${Styles.phone}`}>
+                        +7 (978) 901-2010
+                    </p>
+
+                    <p className={`${Styles.navigationText} ${Styles.mail}`}>iprva@ya.ru</p>
                 </ul>
             </nav>
         </header>
