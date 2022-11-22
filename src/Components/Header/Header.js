@@ -39,13 +39,15 @@ const Header = () => {
                         </li>
                     </div>
 
-                    <p className={`${Styles.navigationText} ${Styles.phone}`}>
-                        +7 (978) 901-2010
-                    </p>
+                    <p className={`${Styles.phone}`}>+7 (978) 901-2010</p>
 
-                    <p className={`${Styles.navigationText} ${Styles.mail}`}>iprva@ya.ru</p>
+                    <p className={`${Styles.mail}`}>iprva@ya.ru</p>
                 </ul>
             </nav>
+            <p className={`${Styles.utp}`}>
+                Строительство домов в Крыму за 4 месяца без увеличения стоимости
+                сметы.
+            </p>
         </header>
     );
 };
