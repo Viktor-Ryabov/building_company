@@ -14,7 +14,7 @@
 }
 
 .contentWidth {
-    padding: 20px 50px 0 50px;
+    padding: 20px 50% 0 5%;
     margin: 0;
     max-height: 200px;
     width: 90%;
@@ -37,7 +37,6 @@
     "logo menu" 
     ". phone"
     ". mail"
-    "utp utp"
 }
 
 .phone {
@@ -63,16 +62,15 @@
     color: whitesmoke;
 }
 .utp{
-    grid-area: utp;
     align-self: center;
     justify-self: flex-start;
     font-weight: 800;
     font-size: 36px;
-    margin: 45px 55px 20px 50px;
+    margin: 0;
     padding: 25px;
     line-height: 45px;
     color: whitesmoke;
-    width: 70%;
+    width: 60%;
     border: 2px solid rgba(0, 255, 255, 0.5);
     background: rgba(0, 255, 255, 0.2);
 }
@@ -143,4 +141,13 @@
 
 .profile {
     justify-self: flex-end;
+}
+
+.capture {
+    margin: 0;
+    padding: 40px 10% 40px 10%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
