@@ -1,59 +1,78 @@
 .form {
-    margin: 20px 0 20px 40px;
-    padding: 0;
-    width: 280px;    
+    margin: auto auto auto 40px;
+    padding: 0 5px 0 5px;
+    width: 260px;
+    min-width: 260px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
 
-.subtitle{
+.subtitle {
     margin: 0;
-    padding: 5px 0 0 0;
+    padding: 10px 5px 10px 5px;
     font-weight: 600;
     font-size: 20px;
     margin: 0;
     line-height: 22px;
     color: whitesmoke;
 }
-.input{
-    margin: 5px;
+
+.input {
+    margin: 0 0 5px 0;
     padding: 2px;
-    border: 0.1px solid rgba(255, 255, 255, 0.6);;
+    border: 0.1px solid rgba(255, 255, 255, 0.6);
     border-radius: 2px;
     background: rgba(255, 255, 255, 0.6);
+    resize: none;
 }
 
-   .input::placeholder {color: rgba(0, 0, 0, 0, 0.8);}
-   .input::placeholder:active {color: rgba(0, 0, 0, 0, 0);}
+.input::placeholder {
+    color: rgba(0, 0, 0, 0, 0.8);
+}
+.input::placeholder:active {
+    color: rgba(0, 0, 0, 0, 0);
+}
 
-   .input::-webkit-input-placeholder {color: rgba(0, 0, 0, 0, 0.8);}
-   .input::-webkit-input-placeholder:active {color: rgba(0, 0, 0, 0, 0);}
-   .input::-ms-input-placeholder {color: rgba(0, 0, 0, 0, 0.8);}
-   .input:-moz-placeholder {color: rgba(0, 0, 0, 0, 0.8);}
-   .input::-moz-placeholder {color: rgba(0, 0, 0, 0, 0.8);}
-   .input:-ms-input-placeholder {color: rgba(0, 0, 0, 0, 0.8);}
+.input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0, 0.8);
+}
+.input::-webkit-input-placeholder:active {
+    color: rgba(0, 0, 0, 0, 0);
+}
+.input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0, 0.8);
+}
+.input:-moz-placeholder {
+    color: rgba(0, 0, 0, 0, 0.8);
+}
+.input::-moz-placeholder {
+    color: rgba(0, 0, 0, 0, 0.8);
+}
+.input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0, 0.8);
+}
 
-   .button {
+.button {
     margin: 0 auto 15px auto;
     padding: 5px;
-    background: rgba(0, 58, 58, 0.4);
+    background: rgba(0, 58, 58, 0.6);
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     border-radius: 5px;
-    position: relative; 
+    position: relative;
     overflow-x: hidden;
     width: 70%;
 }
-    .button:hover {
-        background: rgba(0, 44, 44, 0.8);
-    }
+.button:hover {
+    background: rgba(0, 44, 44, 0.8);
+}
 
 .button .flare {
     position: absolute;
@@ -63,8 +82,13 @@
     transform: skewX(-45deg);
     animation: flareAnimation;
     left: -150%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
-    animation: flareAnimation 3s infinite linear; 
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0)
+    );
+    animation: flareAnimation 7s infinite linear;
 }
 
 @keyframes flareAnimation {
