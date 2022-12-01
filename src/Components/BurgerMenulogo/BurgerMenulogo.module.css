@@ -10,6 +10,8 @@
     .logo {
         display: block;
         max-width: 25px;
+        justify-self: flex-end;
+        align-self: flex-end;
     }
 }
 
@@ -21,5 +23,6 @@
 }
 
 .button:hover{
-    
+    opacity: 0.8;
+    cursor: pointer;
 }

@@ -3,7 +3,7 @@
     padding: 0;
     /* background-color: #282c34; */
     width: 100%;
-    height: 500px;
+    height: fit-content;
     background-image: url(../../img/bg__image.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
@@ -23,6 +23,8 @@
     grid-template-columns: 200px auto;
 }
 
+
+
 .headerMenu {
     margin: 0 0 0 50px;
     padding: 0;
@@ -33,10 +35,10 @@
     grid-template-rows: 40px 40px 10px;
     list-style: none;
     list-style-type: none;
-    grid-template-areas: 
-    "logo menu" 
-    ". phone"
-    ". mail"
+    grid-template-areas:
+        "logo menu"
+        ". phone"
+        ". mail";
 }
 
 .phone {
@@ -50,7 +52,7 @@
     line-height: 24px;
     color: whitesmoke;
 }
-.mail{
+.mail {
     grid-area: mail;
     align-self: center;
     justify-self: flex-end;
@@ -61,7 +63,9 @@
     line-height: 24px;
     color: whitesmoke;
 }
-.utp{
+.utp {
+    margin: 0;
+    padding: 0;
     align-self: center;
     justify-self: flex-start;
     font-weight: 800;
@@ -75,10 +79,35 @@
     background: rgba(0, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 940px){
-    .utp{
+@media screen and (max-width: 940px) {
+    .utp {
         font-size: 24px;
         line-height: 28px;
+    }
+}
+
+
+
+@media screen and (max-width: 680px) {
+    .utp {
+        margin-top: 20px;
+        font-size: 24px;
+        width: 90%;
+        line-height: 28px;
+    }
+    .contentWidth {
+        max-height: 100px;
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100px auto;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .utp {
+        margin-top: 0px;
     }
 }
 
@@ -90,7 +119,7 @@
     flex-direction: row;
     list-style: none;
     list-style-type: none;
-    border-bottom: solid 2px rgba(255, 255, 255, .5);
+    border-bottom: solid 2px rgba(255, 255, 255, 0.5);
     /* max-height: 100px; */
 }
 
@@ -105,9 +134,19 @@
     }
     .headerMenu {
         margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end
+        grid-template-columns: auto 25px;
+        grid-template-rows: 25px 10px;
+        align-items: flex-start;
+        justify-items: end;
+        grid-template-areas:
+            "phone menu"
+            "mail .";
+    }
+    .phone {
+        justify-self: center;
+    }
+    .mail {
+        justify-self: center;
     }
 }
 
@@ -128,7 +167,7 @@
     color: white;
 }
 
-.navigationButton:hover {
+.navigationButton:hover .mail:hover .phone:hover {
     cursor: pointer;
     opacity: 0.8;
 }
@@ -157,4 +196,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+@media screen and (max-width: 680px){
+    .capture{
+        display: flex;
+        flex-direction: column;
+    }
 }
