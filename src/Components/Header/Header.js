@@ -14,35 +14,55 @@ const Header = () => {
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <p className={`${Styles.navigationText}`}>О нас</p>
-                        </li>
-
-                        <li
-                            className={`${Styles.navigationButton} ${Styles.profile}`}
-                        >
                             <p className={`${Styles.navigationText}`}>
-                                Контакты
+                                <a className={Styles.link} href="#">
+                                    О нас
+                                </a>
                             </p>
                         </li>
 
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <p className={`${Styles.navigationText}`}>Услуги</p>
+                            <p className={`${Styles.navigationText}`}>
+                                <a className={Styles.link} href="#">
+                                    Контакты
+                                </a>
+                            </p>
                         </li>
 
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
                             <p className={`${Styles.navigationText}`}>
-                                Примеры работ
+                                <a className={Styles.link} href="#">
+                                    Услуги
+                                </a>
+                            </p>
+                        </li>
+
+                        <li
+                            className={`${Styles.navigationButton} ${Styles.profile}`}
+                        >
+                            <p className={`${Styles.navigationText}`}>
+                                <a className={Styles.link} href="#">
+                                    Примеры работ
+                                </a>
                             </p>
                         </li>
                     </div>
 
-                    <p className={Styles.phone}>+7 (978) 901-2010</p>
+                    <p className={Styles.phone}>
+                        <a className={Styles.link} href="tel:+79998887766">
+                            +7 (978) 901-2010
+                        </a>
+                    </p>
 
-                    <p className={Styles.mail}>iprva@ya.ru</p>
+                    <p className={Styles.mail}>
+                        <a className={Styles.link} href="mailto:iprva@ya.ru">
+                            iprva@ya.ru
+                        </a>
+                    </p>
                 </ul>
             </nav>
 
