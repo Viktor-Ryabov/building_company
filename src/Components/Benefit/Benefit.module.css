@@ -1,6 +1,15 @@
-.menu {
+.main {
     margin: 0;
-    padding: 20px 0 20px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.benefit {
+    margin: 0;
+    padding: 5px 0 5px 0;
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -8,10 +17,9 @@
     justify-content: space-around;
     background-color: #282c34;
     flex-wrap: wrap;
-    
 }
 
-.listElement{
+.listElement {
     margin: 5px;
     padding: 0;
     list-style: none;
@@ -25,8 +33,17 @@
     opacity: 0.8;
 }
 
-.imageFoto{
+.imageFoto {
     margin: 0 0 5px 0;
     padding: 0;
-    width: 45px;
+    max-width: 45px;
+}
+
+@media screen and (max-width: 680px) {
+    .main {
+        flex-direction: column;
+    }
+    .benefit{
+        width: 100%;
+    }
 }

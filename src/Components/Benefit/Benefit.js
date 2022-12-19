@@ -8,8 +8,8 @@ import stage from "../../img/stage.png";
 
 const Benefit = () => {
     return (
-        <>
-            <ul className={Styles.menu}>
+        <section className={Styles.main}>
+            <ul className={Styles.benefit}>
                 <button className={Styles.listElement}>
                     <img src={norms} alt="нормы" className={Styles.imageFoto} />
                     <li>Строгое соблюдение строительных норм и правил</li>
@@ -45,8 +45,8 @@ const Benefit = () => {
                     <li>Доступные цены и квалифицированный персонал</li>
                 </button>
             </ul>
-            <section></section>
-        </>
+            <section>34154</section>
+        </section>
     );
 };
 
