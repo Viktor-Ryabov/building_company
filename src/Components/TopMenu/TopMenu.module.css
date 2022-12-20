@@ -1,15 +1,27 @@
 .menu {
-    margin: 0;
+    margin: 0 auto 0 auto;
     padding: 20px 0 20px 0;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #282c34;
+    /* background-color: #282c34; */
     flex-wrap: wrap;
 }
 
 
+.listElement {
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+    height: 50px;
+    flex: 2 auto auto;
+    background-color: rgba(10, 255, 255, 0.3);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
 
 .listElement:hover {
     cursor: pointer;

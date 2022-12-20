@@ -2,6 +2,7 @@ import Styles from "../Header/Header.module.css";
 import Logo from "../Logo/Logo.js";
 import BurgerMenulogo from "../BurgerMenulogo/BurgerMenulogo";
 import CaptureForm from "../CaptureForm/CaptureForm";
+import TopMenu from "../TopMenu/TopMenu";
 
 const Header = () => {
     return (
@@ -73,6 +74,7 @@ const Header = () => {
                 </p>
                 <CaptureForm />
             </section>
+            <TopMenu/>
         </header>
     );
 };
