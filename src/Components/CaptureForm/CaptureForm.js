@@ -1,4 +1,5 @@
 import Styles from "../CaptureForm/CaptureForm.module.css";
+import ActionButton from "../ActionButton/ActionButton";
 
 const CaptureForm = () => {
     return (
@@ -36,9 +37,7 @@ const CaptureForm = () => {
                     placeholder="Введите сообщение"
                 />
             </>
-            <a href="#" className={Styles.button}>
-                Получить смету<span className={Styles.flare}></span>
-            </a>
+            <ActionButton text="Получить смету"/>
         </div>
     );
 };

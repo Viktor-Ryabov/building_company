@@ -5,6 +5,7 @@ import time from "../../img/time.png";
 import cost from "../../img/cost.png";
 import tools from "../../img/tools.png";
 import stage from "../../img/stage.png";
+import video from "../../video/building_1.mp4"
 
 const Benefit = () => {
     return (
@@ -45,7 +46,7 @@ const Benefit = () => {
                     <li>Доступные цены и квалифицированный персонал</li>
                 </button>
             </ul>
-            <section>34154</section>
+            <video type="video/mp4" loop muted className={Styles.video} controls src={video} autoPlay={true} />
         </section>
     );
 };
