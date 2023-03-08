@@ -8,6 +8,7 @@
     align-items: top;
     justify-items: center;
     justify-content: center;
+    background: linear-gradient(to top, #282c34, 40%, black);
 }
 
 @media screen and (max-width: 680px) {
