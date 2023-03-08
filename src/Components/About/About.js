@@ -16,7 +16,6 @@ const About = () => {
                     Предоставляем гарантию на выполненные работы.
                 </p>
                 <p className={Styles.text}>Делаем дома как себе.</p>
-                <p className={Styles.text}>Нам верят наши Клиенты.</p>
             </article>
 
             <div className={Styles.author}>
