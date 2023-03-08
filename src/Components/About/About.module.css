@@ -1,0 +1,104 @@
+.main {
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+    align-items: top;
+    justify-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 680px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.article {
+    margin: 0;
+    padding: 0 50px;
+    width: 30%;
+    text-align: left;
+    color: aliceblue;
+}
+
+.h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.text {
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.author {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    color: aliceblue;
+}
+
+
+
+.name {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+.post {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #282c34;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 680px) {
+    .article {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .main {
+        align-items: flex-start;
+    }
+    .author {
+        width: 80%;
+        margin: 20px auto 0 auto;
+    }
+}
+
+
+
+.photo {
+    margin: 0 0 15px 0;
+    padding: 0;
+    background-image: url("../../img/ceo.jpeg");
+    background-position: -6px -39px;
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 
+    0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem #0fa,
+    0 0 0.5rem #0fa,
+    0 0 1rem #0fa,
+    inset 0 0 1.3rem #0fa;    
+}

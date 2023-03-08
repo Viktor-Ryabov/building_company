@@ -1,0 +1,12 @@
+.menu {
+    margin: 0 auto 0 auto;
+    padding: 40px 0 40px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: #282c34; */
+    flex-wrap: wrap;
+    flex: 3 3 auto;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), 40%, black);
+}

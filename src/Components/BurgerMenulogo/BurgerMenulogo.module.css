@@ -1,0 +1,28 @@
+.logo {
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    max-width: 50px;
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .logo {
+        display: block;
+        max-width: 25px;
+        justify-self: flex-end;
+        align-self: flex-end;
+    }
+}
+
+.button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color:unset;
+}
+
+.button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}

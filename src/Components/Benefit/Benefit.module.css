@@ -1,0 +1,130 @@
+.main {
+    margin: 0 auto;
+    width: 90%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #282c34;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.benefit {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.listElement {
+    margin: 5px;
+    padding: 10px;
+    list-style: none;
+    width: 150px;
+    height: 150px;
+    flex: 1 1 auto;
+    background-color: rgba(10, 255, 255, 0.4);
+    color: whitesmoke;
+    /* border-radius: 5px; */
+    border: none;
+    border: 8px solid rgba(0, 255, 255, 0.4);;
+    background: #282c34;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
+    animation: anim-ramka-1 10s infinite ;
+
+    
+}
+
+@keyframes anim-ramka-1 {
+    0% {
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+        box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
+    }
+    25% {
+        border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+    }
+    50% {
+        border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+        box-shadow: -10px -5px 50px rgba(0,0,0,0.2);
+    }
+    75% {
+        border-radius: 33% 67% 70% 42%/63% 68% 32% 37%;
+    }
+}
+
+
+.listElement:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.imageFoto {
+    margin: 0 0 5px 0;
+    padding: 0;
+    max-width: 45px;
+}
+
+.video{
+    margin: 0;
+    padding: 10px;
+    width: auto;
+    height: 310px;
+    /* border-radius: 20px; */
+}
+
+@media screen and (max-width: 680px) {
+
+    .benefit{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        flex-direction: column;
+    }
+    .benefit{
+        width: 100%;
+    }
+    .listElement {
+        margin: 5px;
+        padding: 10px;
+        list-style: none;
+        width: 150px;
+        height: 150px;
+        flex: 1 1 auto;
+        background-color: rgba(10, 255, 255, 0.4);
+        color: whitesmoke;
+        border-radius: 5px;
+        border: none;
+    }
+    .video{
+        padding: 5px;
+        width: calc(100% - 10px) ;
+        height: auto;
+        
+    }
+}
+
+@media screen and (max-width: 1130px) and (min-width: 901px) {
+    .benefit{
+        width: 30%;
+    }
+    .listElement{
+        width: 100px;
+        height: 100px;
+        font-size: 10px;
+    }
+    .imageFoto {
+        margin: 0 0 5px 0;
+        max-width: 25px;
+    }
+}

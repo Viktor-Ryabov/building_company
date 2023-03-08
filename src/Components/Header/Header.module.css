@@ -1,0 +1,223 @@
+.header {
+    margin: 0;
+    padding: 0;
+    /* background-color: #282c34; */
+    width: 100%;
+    height: fit-content;
+    background-image: url(../../img/bg__image.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.contentWidth {
+    padding: 20px 5% 0 5%;
+    max-height: 200px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+
+
+.headerMenu {
+    margin: 0 0 0 50px;
+    padding: 0;
+    padding: 0;
+    display: flex;
+    display: grid;
+    grid-template-columns: 0px auto;
+    grid-template-rows: 40px 40px 10px;
+    list-style: none;
+    list-style-type: none;
+    grid-template-areas:
+        "logo menu"
+        ". phone"
+        ". mail";
+}
+
+.link {
+    text-decoration:none;
+    color: whitesmoke;
+}
+.link:hover {
+    cursor: pointer;
+    opacity: 80%;    
+}
+.link:active{
+    color: rgb(187, 187, 187);
+}
+
+.phone, .mail{
+    grid-area: phone;
+    align-self: center;
+    justify-self: flex-end;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    
+    text-decoration:none;
+}
+.phone {
+    grid-area: phone;
+}
+.mail{
+    grid-area: mail;
+}
+
+.utp {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    justify-self: flex-start;
+    font-weight: 800;
+    font-size: 36px;
+    margin: 0;
+    padding: 25px;
+    line-height: 45px;
+    color: whitesmoke;
+    width: 60%;
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    background: rgba(0, 255, 255, 0.4);
+    box-shadow: 
+    0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem #0fa,
+    0 0 0.5rem #0fa,
+    0 0 1rem #0fa,
+    inset 0 0 1.3rem #0fa;
+}
+
+@media screen and (max-width: 940px) {
+    .utp {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+
+
+@media screen and (max-width: 680px) {
+    .utp {
+        margin-top: 20px;
+        font-size: 24px;
+        width: 90%;
+        line-height: 28px;
+    }
+    .contentWidth {
+        max-height: 100px;
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100px auto;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .utp {
+        margin-top: 0px;
+    }
+}
+
+.buttonList {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    list-style-type: none;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+    /* max-height: 100px; */
+    
+}
+
+@media screen and (max-width: 750px) {
+    .buttonList {
+        display: none;
+    }
+    .contentWidth {
+        margin: 0;
+        padding: 20px;
+        max-height: 50px;
+    }
+    .headerMenu {
+        margin: 0;
+        grid-template-columns: auto 25px;
+        grid-template-rows: 25px 10px;
+        align-items: flex-start;
+        justify-items: end;
+        grid-template-areas:
+            "phone menu"
+            "mail .";
+    }
+    .phone {
+        justify-self: center;
+    }
+    .mail {
+        justify-self: center;
+    }
+}
+
+.navigationButton {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    height: 29px;
+    /* background-color: #282c34; */
+    border: none;
+    color: #8585ad;
+}
+
+.navigationButtonActive {
+    color: white;
+}
+
+.navigationButton:hover .mail:hover .phone:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.navigationIcon {
+    margin: 0;
+    padding: 0;
+}
+
+.navigationText {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: whitesmoke;
+}
+
+.profile {
+    justify-self: flex-end;
+}
+
+.capture {
+    margin: 0;
+    padding: 40px 10% 40px 10%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+@media screen and (max-width: 680px){
+    .capture{
+        display: flex;
+        flex-direction: column;
+    }
+}
