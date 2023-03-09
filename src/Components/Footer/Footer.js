@@ -1,27 +1,28 @@
 import Styles from "./Footer.module.css";
 import Logo from "../Logo/Logo.js";
-import ActionButton from "../ActionButton/ActionButton.js";
+import ButtonTop from "../ButtonTop/ButtonTop.js";
 
 const Footer = () => {
     return (
         <section className={Styles.footer}>
             <div className={Styles.requisites}>
                 <text className={Styles.text}>
-                    ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ РЯБОВ ВИКТОР АЛЕКСАНДРОВИЧ
+                    ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ
                 </text>
+                <text className={Styles.text}>РЯБОВ ВИКТОР АЛЕКСАНДРОВИЧ</text>
                 <text className={Styles.text}>ИНН: 500117624290</text>
                 <text className={Styles.text}>ОГРН: 317505300071852</text>
             </div>
 
             <ul className={Styles.contacts}>
                 <li className={Styles.listElement}>
-                    <ActionButton> +7(978)901-2010 </ActionButton>
+                    <ButtonTop text="+7(978)901-2010"/>
                 </li>
                 <li className={Styles.listElement}>
-                    <ActionButton> iprva@yandex.ru </ActionButton>
+                    <ButtonTop text="iprva@yandex.ru" />
                 </li>
                 <li className={Styles.listElement}>
-                    <ActionButton> @rya_lt </ActionButton>
+                    <ButtonTop text="@rya_lt"/>
                 </li>
             </ul>
             <Logo />
