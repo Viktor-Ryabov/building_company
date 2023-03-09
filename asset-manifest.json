@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/building_company/static/css/main.992b31b6.css",
+    "main.js": "/building_company/static/js/main.1326b960.js",
+    "static/js/651.8eb9770f.chunk.js": "/building_company/static/js/651.8eb9770f.chunk.js",
+    "static/media/building_1.mp4": "/building_company/static/media/building_1.764b3ea110e08da419ed.mp4",
+    "static/media/bg__image.jpg": "/building_company/static/media/bg__image.dc5409f07bac1b8ec66c.jpg",
+    "static/media/ceo.jpeg": "/building_company/static/media/ceo.7c418ce26a2c3e260213.jpeg",
+    "static/media/stage.png": "/building_company/static/media/stage.99d7e25f764d55e6da54.png",
+    "static/media/time.png": "/building_company/static/media/time.bf8e241033371319dcef.png",
+    "static/media/cost.png": "/building_company/static/media/cost.1b278204eaabb506d0dc.png",
+    "static/media/norms.png": "/building_company/static/media/norms.d7acc44968a71a6ef957.png",
+    "static/media/ryabov_new_white.png": "/building_company/static/media/ryabov_new_white.8666ceea29b11c6d07dc.png",
+    "static/media/tools.png": "/building_company/static/media/tools.3667406e7bf25f812ac7.png",
+    "static/media/tehnologies.png": "/building_company/static/media/tehnologies.c8ecf39a988fab581365.png",
+    "index.html": "/building_company/index.html",
+    "main.992b31b6.css.map": "/building_company/static/css/main.992b31b6.css.map",
+    "main.1326b960.js.map": "/building_company/static/js/main.1326b960.js.map",
+    "651.8eb9770f.chunk.js.map": "/building_company/static/js/651.8eb9770f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.992b31b6.css",
+    "static/js/main.1326b960.js"
+  ]
+}
