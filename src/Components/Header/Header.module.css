@@ -4,10 +4,10 @@
     /* background-color: #282c34; */
     width: 100%;
     height: fit-content;
-    background-image: url(../../img/bg__image.jpg);
+    /* background-image: url(../../img/bg__image.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -177,7 +177,7 @@
     height: 29px;
     /* background-color: #282c34; */
     border: none;
-    color: #8585ad;
+    color: #ffffff;
 }
 
 .navigationButtonActive {
@@ -206,18 +206,3 @@
     justify-self: flex-end;
 }
 
-.capture {
-    margin: 0;
-    padding: 40px 10% 40px 10%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-@media screen and (max-width: 680px){
-    .capture{
-        display: flex;
-        flex-direction: column;
-    }
-}

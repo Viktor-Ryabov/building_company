@@ -1,38 +1,41 @@
 import Styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo.js";
 import BurgerMenulogo from "../BurgerMenulogo/BurgerMenulogo";
-import CaptureForm from "../CaptureForm/CaptureForm";
-import TopMenu from "../TopMenu/TopMenu";
-import ButtonTop from "../ButtonTop/ButtonTop";
 
 const Header = () => {
     return (
         <header className={Styles.header}>
             <nav className={Styles.contentWidth}>
-                <Logo />
+                <Link to="/"><Logo /></Link>
                 <ul className={Styles.headerMenu}>
                     <BurgerMenulogo />
                     <div className={Styles.buttonList}>
+
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <ButtonTop text="О нас" />
+                            <Link to="/aboutPage" className={Styles.navigationButton}>О нас</Link>
                         </li>
+
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <ButtonTop text="Контакты" />
+                            <Link to="/contactsPage" className={Styles.navigationButton}>Контакты</Link>
                         </li>
+
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <ButtonTop text="Услуги" />
+                            <Link to="/servicesPage" className={Styles.navigationButton}>Услуги</Link>
                         </li>
+
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <ButtonTop text="Примеры работ" />
+                            <Link to="/examplesPage" className={Styles.navigationButton}>Примеры работ</Link>
                         </li>
+                        
                     </div>
 
                     <p className={Styles.phone}>
@@ -48,15 +51,6 @@ const Header = () => {
                     </p>
                 </ul>
             </nav>
-
-            <section className={Styles.capture}>
-                <p className={Styles.utp}>
-                    Строительство домов в Крыму за 4 месяца без увеличения
-                    стоимости сметы.
-                </p>
-                <CaptureForm />
-            </section>
-            <TopMenu />
         </header>
     );
 };

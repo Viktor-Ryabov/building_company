@@ -1,19 +1,23 @@
-import './App.css';
-import Header from '../Header/Header.js';
-import Benefit from "../Benefit/Benefit.js"
-import About from "../About/About.js"
-import Footer from '../Footer/Footer';
+import Styles from "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "../Footer/Footer";
+import { Main } from "../../pages/Main/Main.js";
+import { ContactsPage } from "../../pages/ContactsPage/ContactsPage";
+import { ExamplesOfWorksPage } from "../../pages/ExamplesOfWorksPage/ExamplesOfWorksPage";
+import {AboutPage} from "../../pages/AboutPage/AboutPage.js"
+import { ServicesPage } from "../../pages/ServicesPage/ServicesPage.js";
 
-function App() {
-  return (
-    <div className="App">
-
-      <Header/>
-      <About/>
-      <Benefit/>
-      <Footer/>
-    </div>
-  );
-}
-
-export default App;
+export const App = () => (
+    <section className={Styles.App}>
+        <BrowserRouter>
+            <Routes>
+                <Route path="*" element={<Main />} />
+                <Route path="aboutPage" element={<AboutPage />} />
+                <Route path="contactsPage" element={<ContactsPage />} />
+                <Route path="examplesPage" element={<ExamplesOfWorksPage />} />
+                <Route path="servicesPage" element={<ServicesPage />} />
+            </Routes>
+        </BrowserRouter>
+        <Footer />
+    </section>
+);

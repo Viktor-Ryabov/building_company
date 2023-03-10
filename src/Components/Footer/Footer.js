@@ -6,12 +6,12 @@ const Footer = () => {
     return (
         <section className={Styles.footer}>
             <div className={Styles.requisites}>
-                <text className={Styles.text}>
+                <p className={Styles.text}>
                     ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ
-                </text>
-                <text className={Styles.text}>РЯБОВ ВИКТОР АЛЕКСАНДРОВИЧ</text>
-                <text className={Styles.text}>ИНН: 500117624290</text>
-                <text className={Styles.text}>ОГРН: 317505300071852</text>
+                </p>
+                <p className={Styles.text}>РЯБОВ ВИКТОР АЛЕКСАНДРОВИЧ</p>
+                <p className={Styles.text}>ИНН: 500117624290</p>
+                <p className={Styles.text}>ОГРН: 317505300071852</p>
             </div>
 
             <ul className={Styles.contacts}>
