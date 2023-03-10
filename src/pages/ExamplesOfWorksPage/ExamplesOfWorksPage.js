@@ -1,3 +1,3 @@
-export const ExamplesOfWorksPage = () => {
+export const ExamplesOfWorksPage = () => (
     <div>ExamplesOfWorksPage</div>
-}
+)

@@ -1,3 +1,3 @@
-export const ServicesPage = () => {
+export const ServicesPage = () => (
     <div>ServicesPage</div>
-}
+)
