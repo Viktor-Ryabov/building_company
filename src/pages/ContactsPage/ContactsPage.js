@@ -1,5 +1,9 @@
 import Styles from "./ContactsPage.module.css"
+import Header from "../../Components/Header/Header";
+import { TopBlocWithPicture } from "../../Components/About/TopBlocWithPicture/TopBlocWithPicture";
 
 export const ContactsPage = () => (
-    <div className={Styles.main}>ContactsPage</div>
+    <TopBlocWithPicture>
+        <Header/>
+    </TopBlocWithPicture>
 )
