@@ -4,6 +4,7 @@ import BurgerMenulogo from "../BurgerMenulogo/BurgerMenulogo";
 import CaptureForm from "../CaptureForm/CaptureForm";
 import TopMenu from "../TopMenu/TopMenu";
 import ButtonTop from "../ButtonTop/ButtonTop";
+import { UtpAndForm } from "../UtpAndForm/UtpAndForm.js";
 
 const Header = () => {
     return (
@@ -13,26 +14,31 @@ const Header = () => {
                 <ul className={Styles.headerMenu}>
                     <BurgerMenulogo />
                     <div className={Styles.buttonList}>
+
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <ButtonTop text="О нас" />
+                            <ButtonTop  text="О нас" />
                         </li>
+
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
                             <ButtonTop text="Контакты" />
                         </li>
+
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
                             <ButtonTop text="Услуги" />
                         </li>
+
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
                             <ButtonTop text="Примеры работ" />
                         </li>
+                        
                     </div>
 
                     <p className={Styles.phone}>
@@ -48,14 +54,7 @@ const Header = () => {
                     </p>
                 </ul>
             </nav>
-
-            <section className={Styles.capture}>
-                <p className={Styles.utp}>
-                    Строительство домов в Крыму за 4 месяца без увеличения
-                    стоимости сметы.
-                </p>
-                <CaptureForm />
-            </section>
+            <UtpAndForm/>
             <TopMenu />
         </header>
     );

@@ -206,18 +206,3 @@
     justify-self: flex-end;
 }
 
-.capture {
-    margin: 0;
-    padding: 40px 10% 40px 10%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-@media screen and (max-width: 680px){
-    .capture{
-        display: flex;
-        flex-direction: column;
-    }
-}
