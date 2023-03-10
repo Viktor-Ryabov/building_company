@@ -137,7 +137,10 @@
     list-style-type: none;
     border-bottom: solid 2px rgba(255, 255, 255, 0.5);
     /* max-height: 100px; */
-    
+}
+
+.active {
+    display: block;
 }
 
 @media screen and (max-width: 750px) {

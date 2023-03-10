@@ -2,40 +2,71 @@ import Styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo.js";
 import BurgerMenulogo from "../BurgerMenulogo/BurgerMenulogo";
+import { useState } from "react";
 
 const Header = () => {
+    let [bugerMenuState, setState] = useState();
+    console.log(bugerMenuState);
+
+    const openBurgerMenu = () => {
+        console.log("вывод из хедера openBurgerMenu");
+        bugerMenuState = !bugerMenuState;
+        console.log(bugerMenuState);
+    };
     return (
         <header className={Styles.header}>
             <nav className={Styles.contentWidth}>
-                <Link to="/"><Logo /></Link>
+                <Link to="/">
+                    <Logo />
+                </Link>
                 <ul className={Styles.headerMenu}>
-                    <BurgerMenulogo />
-                    <div className={Styles.buttonList}>
-
+                    <BurgerMenulogo openFunc={openBurgerMenu} />
+                    <div
+                        className={Styles.buttonList}
+                    >
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <Link to="/aboutPage" className={Styles.navigationButton}>О нас</Link>
+                            <Link
+                                to="/aboutPage"
+                                className={Styles.navigationButton}
+                            >
+                                О нас
+                            </Link>
                         </li>
 
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <Link to="/contactsPage" className={Styles.navigationButton}>Контакты</Link>
+                            <Link
+                                to="/contactsPage"
+                                className={Styles.navigationButton}
+                            >
+                                Контакты
+                            </Link>
                         </li>
 
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <Link to="/servicesPage" className={Styles.navigationButton}>Услуги</Link>
+                            <Link
+                                to="/servicesPage"
+                                className={Styles.navigationButton}
+                            >
+                                Услуги
+                            </Link>
                         </li>
 
                         <li
                             className={`${Styles.navigationButton} ${Styles.profile}`}
                         >
-                            <Link to="/examplesPage" className={Styles.navigationButton}>Примеры работ</Link>
+                            <Link
+                                to="/examplesPage"
+                                className={Styles.navigationButton}
+                            >
+                                Примеры работ
+                            </Link>
                         </li>
-                        
                     </div>
 
                     <p className={Styles.phone}>
