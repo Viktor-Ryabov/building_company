@@ -32,17 +32,17 @@
     background-color: rgba(10, 255, 255, 0.4);
     color: whitesmoke;
     /* border-radius: 5px; */
-    border: none;
     border: 1px dotted rgba(0, 255, 255, 0.4);
     background: #282c34;
-    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    box-sizing: content-box;
+    /* border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
     box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
-    animation: anim-ramka-1 10s infinite ;
+    animation: anim-ramka-1 10s infinite ; */
 
     
 }
 
-@keyframes anim-ramka-1 {
+/* @keyframes anim-ramka-1 {
     0% {
         border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
         box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
@@ -57,7 +57,7 @@
     75% {
         border-radius: 33% 67% 70% 42%/63% 68% 32% 37%;
     }
-}
+} */
 
 
 .listElement:hover {
@@ -80,25 +80,38 @@
 }
 
 @media screen and (max-width: 680px) {
-
     .benefit{
         width: 100%;
     }
+    .text {
+        font-size: 8px;
+    }
+    
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
 }
 
 @media screen and (max-width: 900px) {
+    .text {
+        font-size: 10px;
+    }
     .main {
         flex-direction: column;
     }
     .benefit{
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
     .listElement {
         margin: 5px;
         padding: 10px;
         list-style: none;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         flex: 1 1 auto;
         /* background-color: rgba(10, 255, 255, 0.4); */
         color: whitesmoke;
@@ -106,8 +119,8 @@
         border: 1px dotted rgba(0, 255, 255, 0.4);
     }
     .video{
-        padding: 5px;
-        width: calc(100% - 10px) ;
+        padding: 5%;
+        width: calc(100% - 10%) ;
         height: auto;
         
     }

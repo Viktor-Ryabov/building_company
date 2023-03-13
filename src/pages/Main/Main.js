@@ -4,7 +4,7 @@ import About from "../../Components/About/About.js";
 import { UtpAndForm } from "../../Components/UtpAndForm/UtpAndForm.js";
 import Header from "../../Components/Header/Header.js";
 import TopMenu from "../../Components/TopMenu/TopMenu.js";
-import { TopBlocWithPicture } from "../../Components/About/TopBlocWithPicture/TopBlocWithPicture";
+import { TopBlocWithPicture } from "../../Components/TopBlocWithPicture/TopBlocWithPicture";
 
 export const Main = () => {
     return (
